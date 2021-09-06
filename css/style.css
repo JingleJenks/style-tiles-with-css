@@ -37,7 +37,6 @@ footer {
   margin: 0 auto;
   padding: calc(2 * var(--white-space));
 }
-
 .full-width {
   background: var(--bg-color);
   color: white;
@@ -71,10 +70,18 @@ footer {
 main {
   padding: calc(2 * var(--white-space));
 }
-
-section {
-  margin-bottom: calc(4 * var(--white-space));
+.imgbg {
+  background-image: url(../img/bg.jpg);
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  width: 99vw;
+  height: 70vh;
+  z-index: -3;
 }
+/* section {
+  margin-bottom: calc(4 * var(--white-space));
+} */
 
 .section-heading {
   font-family: montserrat, sans-serif;
