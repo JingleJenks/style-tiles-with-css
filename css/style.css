@@ -27,6 +27,9 @@ html {
   font-size: 100%;
   font-family: var(--primary-font);
 }
+img {
+  max-width: 15vw;
+}
 header,
 main,
 footer {
@@ -118,25 +121,24 @@ ul li:last-child {
 
 .textures li {
   height: 30vw;
-  width: 40%;
+  width: 10vw;
   margin-right: 5vw;
 }
 
-.texture-swatch-1 {
-  background: url(../img/pw_maze_white.png) top left repeat;
+.textures img {
+  max-width: 10vw;
 }
 
-.texture-swatch-2 {
+/* .texture-swatch-2 {
   background: url(../img/subtle_grunge.png) top left repeat;
 }
 
 .texture-swatch-1 {
-  background: url(../img/pw_maze_white.png) top left repeat;
 }
 
 .texture-swatch-3 {
   background: url(../img/white_paperboard.png) top left repeat;
-}
+} */
 
 .images ul {
   flex-direction: column;
@@ -287,9 +289,7 @@ footer {
     flex-direction: row;
   }
 }
-img {
-  max-width: 15vw;
-}
+
 .fern {
   position: absolute;
   right: 2vw;
