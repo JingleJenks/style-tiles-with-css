@@ -17,7 +17,7 @@ use the fonts in other ways in the font hierarchy etc. */
   --green20: #a2c683;
   --green30: #91b075;
   --grey1: #707070;
-
+  --grey2: #e9eaec;
   --main-text-color: #000;
 
   --white-space: 1rem;
@@ -117,6 +117,9 @@ ul li:last-child {
 
 .color-swatch-4 {
   background-color: var(--grey1);
+}
+.color-swatch-5 {
+  background-color: var(--grey2);
 }
 
 .textures li {
