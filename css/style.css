@@ -77,11 +77,18 @@ main {
   margin: 0;
   position: absolute;
   width: 99vw;
-  height: 70vh;
+  height: 75vh;
   z-index: -3;
 }
 section {
   margin-bottom: calc(4 * var(--white-space));
+}
+section.textures,
+.typography-main {
+  margin-bottom: 0;
+}
+section.buttons {
+  margin-bottom: 0;
 }
 
 .section-heading {
