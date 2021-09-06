@@ -5,8 +5,8 @@
 }
 
 /* THIS IS ALL meant for editing. You might want to do it differently, 
-name the variables differently, 
-use the fonts in other ways in the font hierarchy etc. */
+  name the variables differently, 
+  use the fonts in other ways in the font hierarchy etc. */
 
 /* change these */
 :root {
@@ -37,6 +37,7 @@ footer {
   margin: 0 auto;
   padding: calc(2 * var(--white-space));
 }
+
 .full-width {
   background: var(--bg-color);
   color: white;
@@ -79,9 +80,9 @@ main {
   height: 70vh;
   z-index: -3;
 }
-/* section {
+section {
   margin-bottom: calc(4 * var(--white-space));
-} */
+}
 
 .section-heading {
   font-family: montserrat, sans-serif;
@@ -142,17 +143,6 @@ ul li:last-child {
 .texture2 {
   height: 100%;
 }
-/* .texture-swatch-2 {
-  background: url(../img/subtle_grunge.png) top left repeat;
-}
-
-.texture-swatch-1 {
-}
-
-.texture-swatch-3 {
-  background: url(../img/white_paperboard.png) top left repeat;
-} */
-
 .images ul {
   flex-direction: column;
   text-align: center;
@@ -181,17 +171,32 @@ button {
   cursor: pointer;
   margin: 0 1rem 1rem 0;
 }
-
-.secondary-button {
-  background: #a2c683;
-  box-shadow: none;
+.hiddennav {
+  display: none;
+  right: 80px;
+  background-color: var(--green10);
   color: var(--grey1);
+  border-radius: 25px;
+  margin: 0;
+  margin-top: 30px;
+  max-width: 50%;
+  text-align: left;
 }
 
 .primary-button:hover {
   font-size: 1.3rem;
   color: var(--grey1);
 }
+
+.primary-button:hover .hiddennav {
+  display: block;
+}
+.secondary-button {
+  background: #a2c683;
+  box-shadow: none;
+  color: var(--grey1);
+}
+
 .secondary-button:hover {
   font-size: 1.3rem;
   font-weight: 600;
@@ -201,6 +206,15 @@ button {
 button:active {
   background-color: var(--bg-color);
 }
+.buttons a {
+  color: var(--grey1);
+  font-size: 1.2rem;
+  text-decoration-line: none;
+  font-family: montserrat, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 .h1-sample {
   font-family: montserrat, sans-serif;
   font-weight: 500;
