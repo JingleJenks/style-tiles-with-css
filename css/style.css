@@ -166,7 +166,17 @@ button {
   cursor: pointer;
   margin: 0 1rem 1rem 0;
 }
-
+.hiddennav {
+  display: none;
+  right: 80px;
+  background-color: var(--green10);
+  color: var(--grey1);
+  border-radius: 25px;
+  margin: 0;
+  margin-top: 30px;
+  max-width: 50%;
+  text-align: left;
+}
 .secondary-button {
   background: #a2c683;
   box-shadow: none;
@@ -177,15 +187,30 @@ button {
   font-size: 1.3rem;
   color: var(--grey1);
 }
+
+.primary-button:hover .hiddennav {
+  display: block;
+}
+
 .secondary-button:hover {
   font-size: 1.3rem;
   font-weight: 600;
   color: var(--grey1);
   text-shadow: var(--green10) 2px 2px;
 }
+
 button:active {
   background-color: var(--bg-color);
 }
+.buttons a {
+  color: var(--grey1);
+  font-size: 1.2rem;
+  text-decoration-line: none;
+  font-family: montserrat, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 .h1-sample {
   font-family: montserrat, sans-serif;
   font-weight: 500;
