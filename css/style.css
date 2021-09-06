@@ -27,12 +27,6 @@ html {
   font-size: 100%;
   font-family: var(--primary-font);
 }
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
 header,
 main,
 footer {
@@ -289,4 +283,12 @@ footer {
   .adjectives ul {
     flex-direction: row;
   }
+}
+img {
+  max-width: 15vw;
+}
+.fern {
+  position: absolute;
+  right: 2vw;
+  top: 2vw;
 }
