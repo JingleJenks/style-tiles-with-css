@@ -10,14 +10,12 @@
 
 /* change these */
 :root {
-  --bg-color: #b9d99d;
+  --bg-color: #e9eaec;
   --link-color: green;
   --color-5: rebeccapurple;
-  --green10: #b9d99d;
-  --green20: #a2c683;
-  --green30: #91b075;
-  --grey1: #707070;
-  --grey2: #e9eaec;
+  --green10: #038c4c;
+  --green20: #02733e;
+  --green30: #01401c;
   --main-text-color: #000;
 
   --white-space: 1rem;
@@ -40,7 +38,7 @@ footer {
 
 .full-width {
   background: var(--bg-color);
-  color: white;
+  color: var(--green30);
   width: 100%;
 }
 
@@ -54,7 +52,6 @@ footer {
 }
 
 .header-wrapper h2 {
-  color: rgba(255, 255, 255, 0.95);
   font-weight: bold;
   margin: var(--white-space) 0;
 }
@@ -72,7 +69,7 @@ main {
   padding: calc(2 * var(--white-space));
 }
 .imgbg {
-  background-image: url(../img/bg.jpg);
+  background-color: var(--grey2);
   padding: 0;
   margin: 0;
   position: absolute;
@@ -131,10 +128,10 @@ ul li:last-child {
 }
 
 .color-swatch-4 {
-  background-color: var(--grey1);
+  background-color: var(--bg-color);
 }
 .color-swatch-5 {
-  background-color: var(--grey2);
+  background-color: var(--main-text-color);
 }
 
 .textures li {
@@ -162,9 +159,8 @@ ul li:last-child {
 }
 
 button {
-  font-family: montserrat, sans-serif;
-  font-weight: 400;
-  font-style: normal;
+  font-family: "urbanist", sans-serif;
+  font-weight: 700;
   font-size: 1rem;
   padding: 1rem;
   border-radius: 4px;
@@ -189,49 +185,55 @@ button {
   max-width: 50%;
   text-align: left;
 }
-
-.primary-button:hover {
-  font-size: 1.3rem;
-  color: var(--grey1);
+.primary-link {
+  color: #000;
+  text-decoration-line: none;
+}
+.primary-link:hover {
+  color: var(--green30);
+  text-decoration-line: underline;
+  transition: all 1s;
 }
 
-.primary-button:hover .hiddennav {
+/* .primary-button:hover .hiddennav {
   display: block;
-}
+} */
+
 .secondary-button {
-  background: #a2c683;
+  background: var(--bg-color);
   box-shadow: none;
-  color: var(--grey1);
+  color: var(--green30);
+  padding: 1vw;
+  border-radius: 20px;
+}
+.secondary-button:hover {
+  background: var(--green30);
+  color: var(--bg-color);
+  padding: 0.7vw;
 }
 
-.secondary-button:hover {
-  font-size: 1.3rem;
-  font-weight: 600;
-  color: var(--grey1);
-  text-shadow: var(--green10) 2px 2px;
-}
-button:active {
+/* button:active {
   background-color: var(--bg-color);
 }
 .buttons a {
   color: var(--grey1);
   font-size: 1.2rem;
   text-decoration-line: none;
-  font-family: montserrat, sans-serif;
-  font-weight: 400;
+  font-family: "urbanist", sans-serif;
+  font-weight: 700;
   font-style: normal;
-}
+} */
 
 .h1-sample {
-  font-family: montserrat, sans-serif;
-  font-weight: 500;
+  font-family: "urbanist", sans-serif;
+  font-weight: 700;
   font-style: normal;
   font-size: 1.8rem;
 }
 
 .logo-font {
-  font-family: looking-flowers-caps, sans-serif;
-  font-weight: 400;
+  font-family: "urbanist", sans-serif;
+  font-weight: 700;
   font-style: normal;
   font-size: unset;
   font-size: 4rem;
@@ -242,7 +244,7 @@ button:active {
   font-weight: 400;
   font-style: normal;
   font-size: 1.75rem;
-  color: var(--grey1);
+  color: var(--green30);
 }
 
 p.typography-sample {
@@ -261,9 +263,7 @@ strong {
 em {
   font-style: italic;
 }
-a {
-  transition: all 0.5s;
-}
+
 a:hover {
   color: var(--green30);
   font-size: 1.3rem;
